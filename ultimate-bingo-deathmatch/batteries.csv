@@ -1,11 +1,11 @@
 Name,Cost,Capacity,Passive,Activate
+Basic Battery,,4E,Generate 2E,Generate 2E
+Basic Battery,,4E,Generate 2E,Generate 2E
+Basic Battery,,4E,Generate 2E,Generate 2E
+Basic Battery,,4E,Generate 2E,Generate 2E
+Basic Battery,,4E,Generate 2E,Generate 2E
 Barrier Battery,4E,6E,Generate 3E per turn + 1E when activating a Shield.,Generate 3E
 Barrier Battery,4E,6E,Generate 3E per turn + 1E when activating a Shield.,Generate 3E
-Basic Battery,,4E,Generate 2E,Generate 2E
-Basic Battery,,4E,Generate 2E,Generate 2E
-Basic Battery,,4E,Generate 2E,Generate 2E
-Basic Battery,,4E,Generate 2E,Generate 2E
-Basic Battery,,4E,Generate 2E,Generate 2E
 Chaotic Battery,5E,8E,Generate 3E per turn.,"Generate 4E. Players who rolled same letter as you on the last BINGO roll gain 1E, same number lose 1E."
 Chaotic Battery,5E,8E,Generate 3E per turn.,"Generate 4E. Players who rolled same letter as you on the last BINGO roll gain 1E, same number lose 1E."
 Military Battery,4E,6E,Generate 3E per turn + 1E when activating a Lazor.,Generate 3E

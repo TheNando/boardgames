@@ -8,8 +8,7 @@ Squib::Deck.new cards: deck['Name'].size, layout: 'batteries.yml', width: '2.5in
   png file: './assets/battery.png', layout: :BatteryIcon
   text str: deck['Name'], layout: :Title
 
-  png range: 0..1, file: './assets/energy.png', layout: :EnergyIcon
-  png range: 7..14, file: './assets/energy.png', layout: :EnergyIcon
+  png range: 5..14, file: './assets/energy.png', layout: :EnergyIcon
   text str: deck['Cost'], layout: :EnergyCost
 
   png file: './assets/big-battery.png', layout: :BigBattery
