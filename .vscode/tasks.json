@@ -13,6 +13,18 @@
       "label": "Generate Lazors",
       "type": "shell",
       "command": "source ~/.rvm/scripts/rvm; cd ultimate-bingo-deathmatch/squib; ruby lazors.rb",
+      "problemMatcher": []
+    },
+    {
+      "label": "Generate Shields",
+      "type": "shell",
+      "command": "source ~/.rvm/scripts/rvm; cd ultimate-bingo-deathmatch/squib; ruby shields.rb",
+      "problemMatcher": []
+    },
+    {
+      "label": "Generate Powers",
+      "type": "shell",
+      "command": "source ~/.rvm/scripts/rvm; cd ultimate-bingo-deathmatch/squib; ruby powers.rb",
       "problemMatcher": [],
       "group": {
         "kind": "build",

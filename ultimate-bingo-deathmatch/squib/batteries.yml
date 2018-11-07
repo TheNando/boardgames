@@ -17,14 +17,14 @@ BatteryIcon:
   height: 60
 
 EnergyIcon:
-  x: 600
+  x: 570
   y: 40
   width: 40
   height: 60
 
 EnergyCost:
   color: "#469fcc"
-  x: 650
+  x: 620
   y: 40
 
 BigBattery:
