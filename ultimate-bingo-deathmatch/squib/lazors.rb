@@ -1,6 +1,6 @@
 require 'squib'
 
-deck = Squib.csv file: '../lazors.csv'
+deck = Squib.csv file: '../data/lazors.csv'
 
 Squib::Deck.new cards: deck['Name'].size, layout: 'lazors.yml', width: '2.5in', height: '3.5in' do
   background color: '#ffffff'
@@ -23,5 +23,6 @@ Squib::Deck.new cards: deck['Name'].size, layout: 'lazors.yml', width: '2.5in', 
   text range: 5..14, str: deck['Cost_O'], layout: :OverchargeCost
   text range: 5..14, str: deck['Overcharge'], layout: :OverchargeDescription
 
-  save format: :png, prefix: 'lazors_'
+  # save format: :png, prefix: 'lazors_'
+  save_pdf file: 'lazors_sheet.pdf'
 end

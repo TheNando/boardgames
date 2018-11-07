@@ -1,6 +1,6 @@
 require 'squib'
 
-deck = Squib.csv file: '../batteries.csv'
+deck = Squib.csv file: '../data/batteries.csv'
 
 Squib::Deck.new cards: deck['Name'].size, layout: 'batteries.yml', width: '2.5in', height: '3.5in' do
   background color: '#ffffff'
@@ -22,5 +22,6 @@ Squib::Deck.new cards: deck['Name'].size, layout: 'batteries.yml', width: '2.5in
   text str: 'Activate:', layout: :ActivateLabel
   text str: deck['Activate'], layout: :Activate
 
-  save format: :png, prefix: 'batteries_'
+  # save format: :png, prefix: 'batteries_'
+  save_pdf file: 'batteries_sheet.pdf'
 end

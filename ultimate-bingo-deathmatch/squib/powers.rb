@@ -1,6 +1,6 @@
 require 'squib'
 
-deck = Squib.csv file: '../powers.csv'
+deck = Squib.csv file: '../data/powers.csv'
 
 Squib::Deck.new cards: deck['Name'].size, layout: 'powers.yml', width: '2.5in', height: '3.5in' do
   background color: '#ffffff'
@@ -18,5 +18,6 @@ Squib::Deck.new cards: deck['Name'].size, layout: 'powers.yml', width: '2.5in', 
 
   text str: deck['Desc'], layout: :Description
 
-  save format: :png, prefix: 'powers_'
+  # save format: :png, prefix: 'powers_'
+  save_pdf file: 'powers_sheet.pdf'
 end
