@@ -25,6 +25,12 @@
       "label": "Generate Powers",
       "type": "shell",
       "command": "source ~/.rvm/scripts/rvm; cd ultimate-bingo-deathmatch/squib; ruby powers.rb",
+      "problemMatcher": []
+    },
+    {
+      "label": "Generate Dice",
+      "type": "shell",
+      "command": "source ~/.rvm/scripts/rvm; cd ultimate-bingo-deathmatch/squib; ruby dice.rb",
       "problemMatcher": [],
       "group": {
         "kind": "build",
