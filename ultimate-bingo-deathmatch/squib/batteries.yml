@@ -1,3 +1,9 @@
+Background:
+  x: 0
+  y: 0
+  width: 750
+  height: 1050
+
 LabelText:
   font: Sans 8
   align: left
@@ -28,10 +34,10 @@ EnergyCost:
   y: 40
 
 BigBattery:
-  x: 100
-  y: 120
-  width: 550
-  height: 550
+  x: 0
+  y: 25
+  width: 750
+  height: 750
 
 CapacityLabel:
   extends: LabelText

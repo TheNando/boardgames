@@ -1,0 +1,41 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Generate Batteries",
+      "type": "shell",
+      "command": "source ~/.rvm/scripts/rvm; ruby batteries.rb",
+      "problemMatcher": []
+    },
+    {
+      "label": "Generate Lazors",
+      "type": "shell",
+      "command": "source ~/.rvm/scripts/rvm; ruby lazors.rb",
+      "problemMatcher": []
+    },
+    {
+      "label": "Generate Shields",
+      "type": "shell",
+      "command": "source ~/.rvm/scripts/rvm; ruby shields.rb",
+      "problemMatcher": []
+    },
+    {
+      "label": "Generate Powers",
+      "type": "shell",
+      "command": "source ~/.rvm/scripts/rvm; ruby powers.rb",
+      "problemMatcher": []
+    },
+    {
+      "label": "Generate Dice",
+      "type": "shell",
+      "command": "source ~/.rvm/scripts/rvm; ruby dice.rb",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
