@@ -2,7 +2,7 @@ require 'squib'
 
 deck = Squib.csv file: '../data/batteries.csv'
 
-Squib::Deck.new cards: deck['Name'].size, layout: 'batteries.yml', width: '2.5in', height: '3.5in' do
+ Squib::Deck.new cards: deck['Name'].size, layout: 'batteries.yml', width: '2.5in', height: '3.5in' do
 
   # Background Image
   png file: './assets/battery/Battery-Background.png', layout: :Background
@@ -22,6 +22,7 @@ Squib::Deck.new cards: deck['Name'].size, layout: 'batteries.yml', width: '2.5in
   png file: battery_images, layout: :BigBattery
 
   # Card Title
+  text str: deck['Name'], layout: :Title2
   text str: deck['Name'], layout: :Title
 
   # Card Cost
