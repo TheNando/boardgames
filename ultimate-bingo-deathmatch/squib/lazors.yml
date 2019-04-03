@@ -1,14 +1,20 @@
-LabelText:
-  font: Sans 8
-  align: left
-  color: "#111"
-  x: 50
+Background:
+  x: 0
+  y: 0
+  width: 750
+  height: 1050
 
 Title:
-  extends: LabelText
-  font: Sans 12
-  x: 130
-  y: 42
+  font: Commando 14
+  color: "#ffe348"
+  x: 140
+  y: 48
+
+Title2:
+  extends: Title
+  color: "#464646"
+  x: += 5
+  y: += 5
 
 LazorIcon:
   x: 50
@@ -22,59 +28,46 @@ EnergyIcon:
   width: 40
   height: 60
 
-EnergyCost:
-  color: "#469fcc"
-  x: 620
-  y: 40
-
 BigLazor:
-  x: 120
-  y: 220
-  width: 512
-  height: 313
+  x: 0
+  y: 25
+  width: 750
+  height: 750
 
 ActivateLabel:
-  extends: LabelText
-  y: 680
+  font: Commando 9
+  color: "#ddd"
+  width: 650
+  x: 50
+  y: 735
 
-ActivateEnergy:
-  x: 200
-  y: 670
-  width: 40
-  height: 60
-
-ActivateCost:
-  color: "#469fcc"
-  x: 250
-  y: 670
+ActivateLabelLower:
+  extends: ActivateLabel
+  y: += 75
 
 ActivateDescription:
-  x: 50
-  y: 740
-  width: 650
+  extends: ActivateLabel
+  font: Sans 8
+  color: "#bbb"
+  y: += 50
   height: 100
-  font: Sans 7
-  color: "#666"
 
-OverchargeLabel:
-  extends: LabelText
-  y: 850
+ActivateDescriptionLower:
+  extends: ActivateDescription
+  y: += 75
 
 OverchargeEnergy:
-  x: 250
-  y: 840
-  width: 40
-  height: 60
+  x: 50
+  y: 850
+  width: 30
+  height: 45
 
-OverchargeCost:
+OverchargeLabel:
+  extends: ActivateLabel
   color: "#469fcc"
-  x: 300
-  y: 840
+  x: += 45
+  y: += 130
 
 OverchargeDescription:
-  x: 50
-  y: 910
-  width: 650
-  height: 100
-  font: Sans 7
-  color: "#666"
+  extends: ActivateDescription
+  y: += 130
