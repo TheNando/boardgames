@@ -1,7 +1,7 @@
 Name,Tier,Activate,Overcharge,Qty
 Basic Lazor,S,Deal 1 damage to target,,5
-Disrupting Lazor,I,Deal 2 damage to target,Target must return their Bingo chip and draw again,2
-Disabling Lazor,I,Deal 2 damage to target,Disable target's activated item for the next round,2
-Focused Lazor,I,Deal 2 damage to target,Deal an extra 1 damage to target,2
-Vampiric Lazor,II,Deal 2 damage to target,Gain 1 health if your attack kills target,2
-Diffracting Lazor,II,Deal 2 damage to target,Deal 1 damage to any opponent sharing your letter or number,2
+Disrupting Lazor,A,Deal 2 damage to target,Target must return their Bingo chip and draw again,2
+Disabling Lazor,A,Deal 2 damage to target,Disable target's activated item for the next round,2
+Focused Lazor,A,Deal 2 damage to target,Deal an extra 1 damage to target,2
+Vampiric Lazor,B,Deal 2 damage to target,Gain 1 health if your attack kills target,2
+Prismatic Lazor,B,Deal 2 damage to target,Deal 1 damage to any opponent sharing your letter or number,2

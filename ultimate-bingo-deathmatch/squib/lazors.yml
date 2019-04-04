@@ -16,16 +16,21 @@ Title2:
   x: += 5
   y: += 5
 
+Tier:
+  font: Commando 20
+  x: 660
+  y: 40
+
+Tier2:
+  extends: Tier
+  color: "#464646"
+  x: += 4
+  y: += 4
+
 LazorIcon:
   x: 50
   y: 40
   width: 60
-  height: 60
-
-EnergyIcon:
-  x: 570
-  y: 40
-  width: 40
   height: 60
 
 BigLazor:
@@ -58,7 +63,7 @@ ActivateDescriptionLower:
 
 OverchargeEnergy:
   x: 50
-  y: 850
+  y: 857
   width: 30
   height: 45
 

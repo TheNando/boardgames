@@ -2,7 +2,7 @@ require 'squib'
 
 deck = Squib.csv file: '../data/lazors.csv'
 
-Squib::Deck.new cards: deck['Name'].size, layout: 'lazors.yml', width: '2.5in', height: '3.5in' do
+Squib::Deck.new cards: deck['Name'].size, layout: 'lazors.yml', width: '2.5in', height: '3.5in' do |card|
 
   # Background Image
   png file: './assets/lazor/Weapon-Background.png', layout: :Background
@@ -21,6 +21,12 @@ Squib::Deck.new cards: deck['Name'].size, layout: 'lazors.yml', width: '2.5in', 
   # Card Title
   text str: deck['Name'], layout: :Title2
   text str: deck['Name'], layout: :Title
+
+   # Tier
+  text str: deck['Tier'], layout: :Tier2
+  text range: 0..4, str: deck['Tier'], layout: :Tier, color: '#9dcb51'
+  text range: 5..10, str: deck['Tier'], layout: :Tier, color: '#24bfc4'
+  text range: 11..14, str: deck['Tier'], layout: :Tier, color: '#c593c5'
 
   # Activation Text
   text range: 0..4, str: 'Activate', layout: :ActivateLabelLower

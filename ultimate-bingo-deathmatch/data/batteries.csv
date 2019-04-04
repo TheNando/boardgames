@@ -1,7 +1,7 @@
-Name,Cost,Capacity,Passive,Activate,Qty
-Basic Battery,,4E,Generate 2E,Generate 2E,5
-Barrier Battery,4E,6E,Generate 3E per turn + 1E when activating a Shield.,Generate 3E,2
-Chaotic Battery,5E,8E,Generate 3E per turn.,"Generate 4E. Players who rolled same letter as you on the last BINGO roll gain 1E, same number lose 1E.",2
-Military Battery,4E,6E,Generate 3E per turn + 1E when activating a Lazor.,Generate 3E,2
-Reactive Battery,5E,6E,Generate 3E per turn.,Generate 3E + 1E per Dmg taken,2
-Tesseract Battery,8E,16E,No supply. Starts with 16E. Cannot be activated.,Spend 8E to make an extra BINGO roll.,2
+Name,Tier,Capacity,Passive,Activate,Qty
+Basic Battery,S,,Generate 2E,Generate 2E,5
+Barrier Battery,A,2,Generate 3E per turn + 1E when activating a Shield.,Generate 3E,2
+Chaotic Battery,A,2,Generate 3E per turn.,"Generate 4E. Players who rolled same letter as you on the last BINGO roll gain 1E, same number lose 1E.",2
+Military Battery,A,2,Generate 3E per turn + 1E when activating a Lazor.,Generate 3E,2
+Reactive Battery,B,1,Generate 3E per turn.,Generate 3E + 1E per Dmg taken,2
+Tesseract Battery,B,3,No supply. Starts with 16E. Cannot be activated.,Spend 8E to make an extra BINGO roll.,2
