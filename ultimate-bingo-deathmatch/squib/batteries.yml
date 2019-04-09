@@ -4,10 +4,33 @@ Background:
   width: 750
   height: 1050
 
+BatteryIcon:
+  x: 40
+  y: 40
+  width: 80
+  height: 60
+
+BigBattery:
+  x: 0
+  y: 25
+  width: 750
+  height: 750
+
+EnergyIcon:
+  dy: 4
+  width: 20
+  height: 30
+
+OCSpace:
+  x: 600
+  y: 900
+  width: 115
+  height: 115
+
 LabelText:
   font: Sans 8
   align: left
-  color: "#111"
+  color: "#bbb"
   x: 50
 
 Title:
@@ -23,59 +46,62 @@ Title2:
   x: += 5
   y: += 5
 
-BatteryIcon:
-  x: 40
-  y: 40
-  width: 80
-  height: 60
-
-EnergyIcon:
-  x: 570
-  y: 40
-  width: 40
-  height: 60
-
-EnergyCost:
-  color: "#469fcc"
-  x: 620
+Tier:
+  font: Commando 20
+  x: 660
   y: 40
 
-BigBattery:
-  x: 0
-  y: 25
-  width: 750
-  height: 750
-
-CapacityLabel:
-  extends: LabelText
-  y: 680
-
-Capacity:
-  color: "#469fcc"
-  x: 200
-  y: 670
-
-DescriptionText:
-  x: 50
-  font: Sans 7
-  color: "#666"
+Tier2:
+  extends: Tier
+  color: "#464646"
+  x: += 4
+  y: += 4
 
 PassiveLabel:
-  extends: LabelText
-  y: 750
-
-Passive:
-  extends: DescriptionText
-  y: 790
-  width: 625
+  font: Commando 9
+  color: "#ddd"
+  width: 650
+  x: 50
+  y: 700
+  width: 750
   height: 100
+
+PassiveDescription:
+  extends: PassiveLabel
+  font: Sans 8
+  color: "#bbb"
+  y: += 50
+  height: 100
+
+ActivateLabelBasic:
+  extends: PassiveLabel
+  y: += 75
+
+ActivateDescriptionBasic:
+  extends: PassiveDescription
+  y: += 75
 
 ActivateLabel:
-  extends: LabelText
-  y: 880
+  extends: PassiveLabel
+  y: += 130
 
-Activate:
-  extends: DescriptionText
-  y: 920
-  width: 625
-  height: 100
+ActivateDescription:
+  extends: PassiveDescription
+  height: 150
+  y: += 130
+
+PassiveLabelRaised:
+  extends: PassiveLabel
+  y: -= 50
+
+PassiveDescriptionRaised:
+  extends: PassiveDescription
+  y: -= 50
+
+ActivateLabelRaised:
+  extends: ActivateLabel
+  y: -= 50
+
+ActivateDescriptionRaised:
+  extends: ActivateDescription
+  y: -= 50
