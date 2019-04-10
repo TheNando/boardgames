@@ -30,17 +30,22 @@ Squib::Deck.new cards: deck['Name'].size, layout: 'lazors.yml', width: '2.5in', 
 
   # Activation Text
   text range: 0..4, str: 'Activate', layout: :ActivateLabelLower
-  text range: 0..4, str: deck['Activate'], layout: :ActivateDescriptionLower
+  text(range: 0..4, str: deck['Activate'], layout: :ActivateDescriptionLower) do |embed|
+    embed.png key: ':damage:', file: './assets/damage.png', layout: :DamageIcon
+  end
 
-  # Activation Text
   text range: 5..14, str: 'Activate', layout: :ActivateLabel
-  text range: 5..14, str: deck['Activate'], layout: :ActivateDescription
+  text(range: 5..14, str: deck['Activate'], layout: :ActivateDescription) do |embed|
+    embed.png key: ':damage:', file: './assets/damage.png', layout: :DamageIcon
+  end
 
   # Overcharge Text
   text range: 5..14, str: 'Overcharge', layout: :OverchargeLabel
-  png range: 5..14, file: './assets/energy.png', layout: :OverchargeEnergy
-  text range: 5..14, str: deck['Overcharge'], layout: :OverchargeDescription
+  text(range: 5..14, str: deck['Overcharge'], layout: :OverchargeDescription) do |embed|
+    embed.png key: ':energy:', file: './assets/energy.png', layout: :EnergyIcon
+    embed.png key: ':damage:', file: './assets/damage.png', layout: :DamageIcon
+  end
 
   # save format: :png, prefix: 'lazors_'
-  save_pdf file: 'lazors_sheet.pdf'
+  save_pdf file: 'lazors_sheet_wip.pdf'
 end

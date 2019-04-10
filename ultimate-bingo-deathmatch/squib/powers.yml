@@ -1,53 +1,68 @@
-LabelText:
-  font: Sans 8
-  align: left
-  color: "#111"
-  x: 50
+Background:
+  x: 0
+  y: 0
+  width: 750
+  height: 1050
 
 Title:
-  extends: LabelText
-  font: Sans 11
+  font: Commando 14
+  color: "#ffe348"
   x: 130
-  y: 42
+  y: 47
+  height: 200
+  width: 490
+  spacing: 8
 
-SmallTitle:
+Title2:
   extends: Title
-  font: Sans 10
-  y: 44
+  color: "#464646"
+  x: += 5
+  y: += 5
 
-SmallerTitle:
-  extends: Title
-  font: Sans 9
-  y: 46
+Tier:
+  font: Commando 20
+  x: 660
+  y: 40
+
+Tier2:
+  extends: Tier
+  color: "#464646"
+  x: += 4
+  y: += 4
 
 PowerIcon:
-  x: 50
+  x: 40
   y: 40
   width: 60
   height: 60
 
-EnergyIcon:
-  x: 570
-  y: 40
-  width: 40
-  height: 60
-
-EnergyCost:
-  color: "#469fcc"
-  x: 620
-  y: 40
-
 BigPower:
-  x: 120
-  y: 160
-  width: 512
-  height: 512
+  x: 125
+  y: 175
+  width: 500
+  height: 500
 
-Description:
-  x: 75
-  y: 740
-  width: 600
-  height: 250
-  font: Sans 9
-  color: "#333"
-  align: center
+EnergyIcon:
+  width: 30
+  height: 45
+
+DamageIcon:
+  width: 45
+  height: 45
+
+ActivateLabel:
+  font: Commando 12
+  color: "#ddd"
+  width: 650
+  x: 50
+  y: 760
+  width: 700
+  height: 100
+
+ActivateDescription:
+  extends: ActivateLabel
+  font: Sans bold 9
+  color: "#bbb"
+  y: += 60
+  height: 200
+  width: 650

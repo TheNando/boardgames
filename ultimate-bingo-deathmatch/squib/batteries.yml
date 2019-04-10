@@ -12,14 +12,17 @@ BatteryIcon:
 
 BigBattery:
   x: 0
-  y: 25
+  y: 0
   width: 750
   height: 750
 
 EnergyIcon:
-  dy: 4
-  width: 20
-  height: 30
+  width: 30
+  height: 45
+
+DamageIcon:
+  width: 45
+  height: 45
 
 OCSpace:
   x: 600
@@ -27,14 +30,8 @@ OCSpace:
   width: 115
   height: 115
 
-LabelText:
-  font: Sans 8
-  align: left
-  color: "#bbb"
-  x: 50
-
 Title:
-  extends: LabelText
+  # align: left
   font: Commando 14
   color: "#ffe348"
   x: 140
@@ -58,37 +55,37 @@ Tier2:
   y: += 4
 
 PassiveLabel:
-  font: Commando 9
+  font: Commando 12
   color: "#ddd"
   width: 650
   x: 50
-  y: 700
+  y: 660
   width: 750
   height: 100
 
 PassiveDescription:
   extends: PassiveLabel
-  font: Sans 8
+  font: Sans bold 10
   color: "#bbb"
-  y: += 50
+  y: += 60
   height: 100
 
 ActivateLabelBasic:
   extends: PassiveLabel
-  y: += 75
+  y: += 100
 
 ActivateDescriptionBasic:
   extends: PassiveDescription
-  y: += 75
+  y: += 100
 
 ActivateLabel:
   extends: PassiveLabel
-  y: += 130
+  y: += 150
 
 ActivateDescription:
   extends: PassiveDescription
   height: 150
-  y: += 130
+  y: += 150
 
 PassiveLabelRaised:
   extends: PassiveLabel

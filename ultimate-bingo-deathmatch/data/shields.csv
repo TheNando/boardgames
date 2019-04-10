@@ -1,16 +1,15 @@
-Name,Cost,Cost_A,Activate,Cost_O,Overcharge,
-Basic Shield, ,2E,Block 1 Dmg, , ,
-Basic Shield, ,2E,Block 1 Dmg, , ,
-Basic Shield, ,2E,Block 1 Dmg, , ,
-Basic Shield, ,2E,Block 1 Dmg, , ,
-Basic Shield, ,2E,Block 1 Dmg, , ,
-Absorber Shield,5E,1E,Block 1 Dmg. Store 1E if you take Dmg.,3E,Block all Dmg. Store 1E per Dmg Blocked. Disable Shield 1 round,
-Absorber Shield,5E,1E,Block 1 Dmg. Store 1E if you take Dmg.,3E,Block all Dmg. Store 1E per Dmg Blocked. Disable Shield 1 round,
-Efficient Shield,4E,1E,Block Dmg for an additional 1E per Dmg Blocked,3E,Block all Dmg. Disable shield for 1 round.,
-Efficient Shield,4E,1E,Block Dmg for an additional 1E per Dmg Blocked,3E,Block all Dmg. Disable shield for 1 round.,
-Negator Shield,5E,3E,Block 2 Dmg. Drain 1E from attacker per Dmg blocked.,5E,Block 3 Dmg. Disable Lazor of one attacker for 1 round.,
-Negator Shield,5E,3E,Block 2 Dmg. Drain 1E from attacker per Dmg blocked.,5E,Block 3 Dmg. Disable Lazor of one attacker for 1 round.,
-Reflector Shield,4E,2E,Block 1 Dmg. Spend 1E per unblocked Dmg to also damage attacker.,5E,Reflect all Dmg taken to a single target. Disable Shield 1 round.,
-Reflector Shield,4E,2E,Block 1 Dmg. Spend 1E per unblocked Dmg to also damage attacker.,5E,Reflect all Dmg taken to a single target. Disable Shield 1 round.,
-Ultra Shield,6E,2E,Block 1 Dmg. Block additional Dmg the cost of 1E per Dmg blocked.,6E,"Block all Dmg. On your next BINGO roll, choose result for one die. Disabled shield for 1 round.",
-Ultra Shield,6E,2E,Block 1 Dmg. Block additional Dmg the cost of 1E per Dmg blocked.,6E,"Block all Dmg. On your next BINGO roll, choose result for one die. Disabled shield for 1 round.",
+Name,Tier,Activate,Overcharge,Qty
+Basic Shield,S,Block 1:damage:,,5
+Absorber Shield,A,Block 1:damage:    Get 1:energy: if you take :damage:,"Spend 1:energy:    Block 1:damage:
+Buy a tier <span font=""Commando 12"" foreground=""#24bfc4"">A</span> Power if you block :damage:
+You can't use Shields next turn",2
+Efficient Shield,A,Block 1:damage: per attacker,"Spend 1:energy:    Block 3:damage:
+You can't use Shields next round",2
+Reflector Shield,A,Block 1:damage:    Deal 1:damage: to an attacker,"Spend 1:energy:
+Reflect all :damage: to 1 target
+You can't use Shields next round",2
+Negator Shield,B,Block 2:damage:    An attacker loses 1:energy:,"Spend 2:energy:    Block all :damage:
+Attackers who targeted you can't use Lazors next round",2
+Ultra Shield,B,Block 2:damage:,"Spend 2:energy:    Block all :damage:
+Swap BINGO chip with an attacker
+You can't use shields next round",2

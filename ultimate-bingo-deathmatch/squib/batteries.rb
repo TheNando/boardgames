@@ -32,6 +32,7 @@ deck = Squib.csv file: '../data/batteries.csv'
   text range: 5..12, str: 'Passive', layout: :PassiveLabel
   text(range: 5..12, str: deck['Passive'], layout: :PassiveDescription) do |embed|
     embed.png key: ':energy:', file: './assets/energy.png', layout: :EnergyIcon
+    embed.png key: ':damage:', file: './assets/damage.png', layout: :DamageIcon
   end
 
   text range: 13..14, str: 'Passive', layout: :PassiveLabelRaised
@@ -60,10 +61,10 @@ deck = Squib.csv file: '../data/batteries.csv'
     range = ocs.each_index.select { |i| ocs[i] == n}
     n.times do |i|
       png file: './assets/oc-space.png', layout: :OCSpace, range: range,
-          alpha: 0.75, x: 600 - (i * 140)
+          alpha: 0.9, x: 600 - (i * 140)
     end
   end
 
   # save format: :png, prefix: 'batteries_'
-  save_pdf file: 'batteries_sheet.pdf'
+  save_pdf file: 'batteries_sheet_wip.pdf'
 end
